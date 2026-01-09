@@ -1,0 +1,45 @@
+[
+  {
+    "id": "binance",
+    "name": "Binance",
+    "logo": "https://cryptologos.cc/logos/binance-coin-bnb-logo.png",
+    "type": "CEX",
+    "makerFee": "0.1%",
+    "takerFee": "0.1%",
+    "features": [
+      "Futures",
+      "Staking",
+      "Launchpad"
+    ],
+    "url": "https://binance.com"
+  },
+  {
+    "id": "coinbase",
+    "name": "Coinbase",
+    "logo": "https://cryptologos.cc/logos/coinbase-coin-logo.png",
+    "type": "CEX",
+    "makerFee": "0.4%",
+    "takerFee": "0.6%",
+    "features": [
+      "Custody",
+      "Prime",
+      "Wallet"
+    ],
+    "url": "https://coinbase.com"
+  },
+  {
+    "id": "uniswap",
+    "name": "Uniswap",
+    "logo": "https://cryptologos.cc/logos/uniswap-uni-logo.png",
+    "type": "DEX",
+    "makerFee": "0%",
+    "takerFee": "0.3%",
+    "swapFee": "0.3%",
+    "features": [
+      "Multi-chain",
+      "Governance",
+      "L2 Support"
+    ],
+    "url": "https://uniswap.org"
+  }
+]
