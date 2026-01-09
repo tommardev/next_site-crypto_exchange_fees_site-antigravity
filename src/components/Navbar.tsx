@@ -39,7 +39,8 @@ export default function Navbar() {
                 borderBottom={1}
                 borderStyle={'solid'}
                 borderColor={useColorModeValue('gray.200', 'gray.900')}
-                align={'center'}>
+                align={'center'}
+                justify={'space-between'}>
                 <Flex
                     flex={{ base: 1, md: 'auto' }}
                     ml={{ base: -2 }}
@@ -53,7 +54,7 @@ export default function Navbar() {
                         aria-label={'Toggle Navigation'}
                     />
                 </Flex>
-                <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }} align="center">
+                <Flex flex={{ base: 1, md: 'none' }} justify={{ base: 'center', md: 'start' }} align="center">
                     <Link as={NextLink} href="/">
                         <Text
                             textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
