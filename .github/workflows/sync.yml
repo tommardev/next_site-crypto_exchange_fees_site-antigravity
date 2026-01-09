@@ -1,0 +1,26 @@
+name: Sync Exchange Data
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Every day at midnight
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - run: npm install
+      - name: Run sync script
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/sync-data.mjs
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name 'Data Sync Bot'
+          git config --global user.email 'bot@cryptofees.com'
+          git add public/data/exchanges.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: nightly data sync" && git push)
