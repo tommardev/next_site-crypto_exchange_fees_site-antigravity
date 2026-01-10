@@ -1,37 +1,80 @@
-# Example app with [chakra-ui](https://github.com/chakra-ui/chakra-ui) and TypeScript
+# 🚀 CryptoFees Exchange Site
 
-This example features how to use [chakra-ui](https://github.com/chakra-ui/chakra-ui) as the component library within a Next.js app with TypeScript.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bf1afe25-d08e-4c1e-a13e-57e2f9869788/deploy-status)](https://app.netlify.com/projects/cryptoexchangefees/deploys)
 
-Next.js and chakra-ui have built-in TypeScript declarations, so we'll get autocompletion for their modules straight away.
+A modern, responsive Next.js application designed to track and compare trading fees across Centralized (CEX) and Decentralized (DEX) exchanges. Built with a focus on premium aesthetics, performance, and automated data synchronization.
 
-We are connecting the Next.js `_app.js` with `chakra-ui`'s Provider and theme so the pages can have app-wide dark/light mode. We are also creating some components which shows the usage of `chakra-ui`'s style props.
+## ✨ Core Features
 
-## Deploy your own
+-   **Real-time Fee Comparison**: Easily compare maker, taker, and swap fees across multiple platforms.
+-   **Automated Data Sync**: Integrated script powered by structure for Google Gemini API to keep fee data accurate and up-to-date.
+-   **Premium UX/UI**: Beautifully crafted with Chakra UI, featuring:
+    -   **Glassmorphism Navbar**: Sticky header with blur effects.
+    -   **Dark Mode**: Full support with a seamless toggle.
+    -   **Skeleton Loaders**: Smooth transitions during data fetching.
+    -   **Responsive Design**: Optimized for mobile, tablet, and desktop views.
+-   **Smart Filtering & Sorting**: Search by exchange name or sort by fee percentage to find the best trading options quickly.
+-   **Nightly Updates**: GitHub Actions pipeline that automatically refreshes exchange data every 24 hours.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-chakra-ui&project-name=with-chakra-ui&repository-name=with-chakra-ui)
+## 🛠️ Technology Stack
 
-## How to use
+-   **Framework**: [Next.js](https://nextjs.org/) (TypeScript)
+-   **UI Library**: [Chakra UI](https://chakra-ui.com/)
+-   **Icons**: [React Icons](https://react-icons.github.io/react-icons/)
+-   **Automation**: GitHub Actions
+-   **AI Integration**: [Google Generative AI (Gemini)](https://ai.google.dev/)
+-   **Hosting**: [Netlify](https://www.netlify.com/)
 
-### Using `create-next-app`
+## 🚀 Getting Started
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+### Prerequisites
 
-```bash
-npx create-next-app --example with-chakra-ui with-chakra-ui-app
-```
+-   Node.js 18.x or later
+-   npm
 
-```bash
-yarn create next-app --example with-chakra-ui with-chakra-ui-app
-```
+### Installation
 
-```bash
-pnpm create next-app --example with-chakra-ui with-chakra-ui-app
-```
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/your-username/next_site-crypto_exchange_fees_site.git
+    cd next_site-crypto_exchange_fees_site
+    ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+2.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
 
-## Notes
+3.  **Environment Setup**:
+    Create a `.env` file based on `.env.example`:
+    ```bash
+    GEMINI_API_KEY=your_actual_key_here
+    ```
 
-Chakra has supported Gradients and RTL in `v1.1`. To utilize RTL, [add RTL direction and swap](https://chakra-ui.com/docs/features/rtl-support).
+4.  **Sync Data**:
+    Fetch the initial set of exchange data:
+    ```bash
+    node scripts/sync-data.mjs
+    ```
 
-If you don't have multi-direction app, you should make `<Html lang="ar" dir="rtl">` inside `_document.ts`.
+5.  **Run Locally**:
+    ```bash
+    npm run dev
+    ```
+    Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## 📦 Deployment
+
+### Netlify
+
+The project is pre-configured for Netlify with `netlify.toml`. 
+-   **Build Command**: `npm run build`
+-   **Publish Directory**: `.next`
+
+### GitHub Actions (Data Sync)
+
+The nightly sync is handled by `.github/workflows/sync.yml`. Ensure you have added your `GEMINI_API_KEY` to the GitHub Repository Secrets to allow the automated updates to function.
+
+---
+
+Built with ❤️ for the Crypto Community.
