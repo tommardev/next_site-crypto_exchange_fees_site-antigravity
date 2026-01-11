@@ -5,12 +5,11 @@ import {
     Heading,
     Text,
     Stack,
-    Image,
     Badge,
     HStack,
     Skeleton,
-    SkeletonCircle,
     SkeletonText,
+    Circle,
 } from '@chakra-ui/react';
 import { Exchange } from '../types/exchange';
 
@@ -21,55 +20,34 @@ interface ExchangeCardProps {
 
 export default function ExchangeCard({ exchange, isLoading }: ExchangeCardProps) {
     const bgColor = useColorModeValue('white', 'gray.800');
+    const accentColor = useColorModeValue('blue.500', 'blue.300');
 
     if (isLoading) {
         return (
-            <Box
-                role={'group'}
-                p={6}
-                maxW={'330px'}
-                w={'full'}
-                bg={bgColor}
-                boxShadow={'2xl'}
-                rounded={'lg'}
-                pos={'relative'}
-                zIndex={1}>
+            <Center py={6}>
                 <Box
+                    p={6}
+                    maxW={'330px'}
+                    w={'full'}
+                    bg={bgColor}
+                    boxShadow={'2xl'}
                     rounded={'lg'}
-                    mt={-12}
                     pos={'relative'}
-                    height={'230px'}
-                    _after={{
-                        transition: 'all .3s ease',
-                        content: '""',
-                        w: 'full',
-                        h: 'full',
-                        pos: 'absolute',
-                        top: 5,
-                        left: 0,
-                        bg: 'blue.500',
-                        filter: 'blur(15px)',
-                        zIndex: -1,
-                    }}
-                    _groupHover={{
-                        _after: {
-                            filter: 'blur(20px)',
-                        },
-                    }}>
-                    <Skeleton height="full" rounded="lg" />
+                    zIndex={1}>
+                    <Skeleton height="150px" rounded="lg" mb={4} />
+                    <Stack align={'center'}>
+                        <Skeleton height="20px" width="120px" />
+                        <SkeletonText mt="4" noOfLines={2} spacing="4" width="full" />
+                    </Stack>
                 </Box>
-                <Stack pt={10} align={'center'}>
-                    <Skeleton height="20px" width="120px" />
-                    <SkeletonText mt="4" noOfLines={2} spacing="4" width="full" />
-                </Stack>
-            </Box>
+            </Center>
         );
     }
 
     if (!exchange) return null;
 
     return (
-        <Center py={12}>
+        <Center py={6}>
             <Box
                 role={'group'}
                 p={6}
@@ -81,64 +59,53 @@ export default function ExchangeCard({ exchange, isLoading }: ExchangeCardProps)
                 pos={'relative'}
                 zIndex={1}
                 transition="all 0.3s ease"
-                _hover={{ transform: 'translateY(-10px)' }}>
-                <Box
-                    rounded={'lg'}
-                    mt={-12}
-                    pos={'relative'}
-                    height={'230px'}
-                    _after={{
-                        transition: 'all .3s ease',
-                        content: '""',
-                        w: 'full',
-                        h: 'full',
-                        pos: 'absolute',
-                        top: 5,
-                        left: 0,
-                        backgroundImage: `url(${exchange.logo})`,
-                        filter: 'blur(15px)',
-                        zIndex: -1,
-                    }}
-                    _groupHover={{
-                        _after: {
-                            filter: 'blur(20px)',
-                        },
-                    }}>
-                    <Image
-                        rounded={'lg'}
-                        height={230}
-                        width={282}
-                        objectFit={'contain'}
-                        src={exchange.logo}
-                        bg="white"
-                        p={4}
-                        alt={exchange.name}
-                    />
+                _hover={{ transform: 'translateY(-10px)', boxShadow: '3xl' }}>
+
+                <Box align="center" mb={4}>
+                    <Circle
+                        size="80px"
+                        bg={accentColor}
+                        color="white"
+                        fontSize="2xl"
+                        fontWeight="bold"
+                        boxShadow="lg">
+                        #{exchange.exchange_rank}
+                    </Circle>
                 </Box>
-                <Stack pt={10} align={'center'}>
-                    <Text color={'gray.500'} fontSize={'sm'} textTransform={'uppercase'}>
-                        {exchange.type}
+
+                <Stack align={'center'} spacing={3}>
+                    <Text color={'gray.500'} fontSize={'xs'} textTransform={'uppercase'} fontWeight="bold">
+                        {exchange.type} Exchange
                     </Text>
-                    <Heading fontSize={'2xl'} fontFamily={'body'} fontWeight={500}>
-                        {exchange.name}
+                    <Heading fontSize={'xl'} fontFamily={'body'} fontWeight={700} textAlign="center">
+                        {exchange.exchange_name}
                     </Heading>
-                    <Stack direction={'row'} align={'center'}>
-                        <Text fontWeight={800} fontSize={'xl'}>
-                            Fee: {exchange.swapFee || exchange.takerFee}
-                        </Text>
-                        {exchange.makerFee && (
-                            <Text textDecoration={'line-through'} color={'gray.600'}>
-                                {exchange.makerFee}
-                            </Text>
+
+                    <HStack spacing={4} justify="center" w="full">
+                        {exchange.exchange_trustscore && (
+                            <Box textAlign="center">
+                                <Text fontSize="xs" color="gray.500">Trust Score</Text>
+                                <Badge colorScheme="green" variant="subtle" px={2} py={1} rounded="md">
+                                    {exchange.exchange_trustscore}
+                                </Badge>
+                            </Box>
                         )}
-                    </Stack>
-                    <HStack spacing={2} wrap="wrap" justify="center" mt={2}>
-                        {exchange.features.map(f => (
-                            <Badge key={f} colorScheme="blue" variant="subtle" fontSize="0.7em">
-                                {f}
-                            </Badge>
-                        ))}
+
+                        {exchange.exchange_marketshare && (
+                            <Box textAlign="center">
+                                <Text fontSize="xs" color="gray.500">Market Share</Text>
+                                <Badge colorScheme="purple" variant="subtle" px={2} py={1} rounded="md">
+                                    {exchange.exchange_marketshare}
+                                </Badge>
+                            </Box>
+                        )}
                     </HStack>
+
+                    <Box pt={4} w="full">
+                        <Badge variant="outline" colorScheme="blue" w="full" textAlign="center" py={1}>
+                            Ranked #{exchange.exchange_rank} globally
+                        </Badge>
+                    </Box>
                 </Stack>
             </Box>
         </Center>
