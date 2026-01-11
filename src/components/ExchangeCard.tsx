@@ -61,7 +61,7 @@ export default function ExchangeCard({ exchange, isLoading }: ExchangeCardProps)
                 transition="all 0.3s ease"
                 _hover={{ transform: 'translateY(-10px)', boxShadow: '3xl' }}>
 
-                <Box align="center" mb={4}>
+                <Center mb={4}>
                     <Circle
                         size="80px"
                         bg={accentColor}
@@ -71,7 +71,7 @@ export default function ExchangeCard({ exchange, isLoading }: ExchangeCardProps)
                         boxShadow="lg">
                         #{exchange.exchange_rank}
                     </Circle>
-                </Box>
+                </Center>
 
                 <Stack align={'center'} spacing={3}>
                     <Text color={'gray.500'} fontSize={'xs'} textTransform={'uppercase'} fontWeight="bold">
