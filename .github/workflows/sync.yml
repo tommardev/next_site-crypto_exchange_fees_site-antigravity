@@ -20,7 +20,8 @@ jobs:
         run: node scripts/sync-data.mjs
       - name: Commit and push if changed
         run: |
-          git config --global user.name 'Data Sync Bot'
-          git config --global user.email 'bot@cryptofees.com'
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add public/data/exchanges.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: nightly data sync" && git push)
+          git commit -m "chore: nightly data sync" || exit 0
+          git push https://${{ secrets.DATA_SYNC_PAT }}@github.com/${{ github.repository }}.git HEAD:${{ github.ref_name }}
