@@ -1,147 +1,752 @@
 [
   {
-    "id": "binance",
-    "name": "Binance",
-    "logo": "https://cryptologos.cc/logos/binance-coin-bnb-logo.png",
-    "type": "CEX",
-    "makerFee": "0.1%",
-    "takerFee": "0.1%",
-    "features": [
-      "Futures",
-      "Staking",
-      "Launchpad"
-    ],
-    "url": "https://binance.com"
+    "exchange_rank": "1",
+    "exchange_name": "Binance",
+    "exchange_trustscore": "10/10",
+    "id": "cex-1-binance",
+    "type": "CEX"
   },
   {
-    "id": "coinbase",
-    "name": "Coinbase",
-    "logo": "https://cryptologos.cc/logos/coinbase-coin-logo.png",
-    "type": "CEX",
-    "makerFee": "0.4%",
-    "takerFee": "0.6%",
-    "features": [
-      "Custody",
-      "Prime",
-      "Wallet"
-    ],
-    "url": "https://coinbase.com"
+    "exchange_rank": "2",
+    "exchange_name": "Bybit",
+    "exchange_trustscore": "10/10",
+    "id": "cex-2-bybit",
+    "type": "CEX"
   },
   {
-    "id": "kraken",
-    "name": "Kraken",
-    "logo": "https://cryptologos.cc/logos/kraken-krw-logo.png",
-    "type": "CEX",
-    "makerFee": "0.16%",
-    "takerFee": "0.26%",
-    "features": [
-      "Margin",
-      "OTC",
-      "Staking"
-    ],
-    "url": "https://kraken.com"
+    "exchange_rank": "3",
+    "exchange_name": "OKX",
+    "exchange_trustscore": "10/10",
+    "id": "cex-3-okx",
+    "type": "CEX"
   },
   {
-    "id": "kucoin",
-    "name": "KuCoin",
-    "logo": "https://cryptologos.cc/logos/kucoin-token-kcs-logo.png",
-    "type": "CEX",
-    "makerFee": "0.1%",
-    "takerFee": "0.1%",
-    "features": [
-      "Lending",
-      "Trading Bot",
-      "Spot"
-    ],
-    "url": "https://kucoin.com"
+    "exchange_rank": "4",
+    "exchange_name": "Coinbase Exchange",
+    "exchange_trustscore": "10/10",
+    "id": "cex-4-coinbase-exchange",
+    "type": "CEX"
   },
   {
-    "id": "gateio",
-    "name": "Gate.io",
-    "logo": "https://cryptologos.cc/logos/gate-token-gt-logo.png",
-    "type": "CEX",
-    "makerFee": "0.2%",
-    "takerFee": "0.2%",
-    "features": [
-      "Startup",
-      "Copy Trading",
-      "Options"
-    ],
-    "url": "https://gate.io"
+    "exchange_rank": "5",
+    "exchange_name": "Upbit",
+    "exchange_trustscore": "10/10",
+    "id": "cex-5-upbit",
+    "type": "CEX"
   },
   {
-    "id": "uniswap",
-    "name": "Uniswap (v3)",
-    "logo": "https://cryptologos.cc/logos/uniswap-uni-logo.png",
-    "type": "DEX",
-    "makerFee": "0%",
-    "takerFee": "0.3%",
-    "swapFee": "0.3%",
-    "features": [
-      "Multi-chain",
-      "Governance",
-      "L2 Support"
-    ],
-    "url": "https://uniswap.org"
+    "exchange_rank": "6",
+    "exchange_name": "Kraken",
+    "exchange_trustscore": "10/10",
+    "id": "cex-6-kraken",
+    "type": "CEX"
   },
   {
-    "id": "pancakeswap",
-    "name": "PancakeSwap",
-    "logo": "https://cryptologos.cc/logos/pancakeswap-cake-logo.png",
-    "type": "DEX",
-    "makerFee": "0%",
-    "takerFee": "0.25%",
-    "swapFee": "0.25%",
-    "features": [
-      "IFO",
-      "Lottery",
-      "NFT Market"
-    ],
-    "url": "https://pancakeswap.finance"
+    "exchange_rank": "7",
+    "exchange_name": "Gate.io",
+    "exchange_trustscore": "10/10",
+    "id": "cex-7-gate-io",
+    "type": "CEX"
   },
   {
-    "id": "raydium",
-    "name": "Raydium",
-    "logo": "https://cryptologos.cc/logos/raydium-ray-logo.png",
-    "type": "DEX",
-    "makerFee": "0%",
-    "takerFee": "0.25%",
-    "swapFee": "0.25%",
-    "features": [
-      "Solana Ecosystem",
-      "Serum Integration",
-      "Yield"
-    ],
-    "url": "https://raydium.io"
+    "exchange_rank": "8",
+    "exchange_name": "KuCoin",
+    "exchange_trustscore": "10/10",
+    "id": "cex-8-kucoin",
+    "type": "CEX"
   },
   {
-    "id": "sushiswap",
-    "name": "SushiSwap",
-    "logo": "https://cryptologos.cc/logos/sushiswap-sushi-logo.png",
-    "type": "DEX",
-    "makerFee": "0%",
-    "takerFee": "0.3%",
-    "swapFee": "0.3%",
-    "features": [
-      "BentoBox",
-      "Kashi Lending",
-      "Onsen"
-    ],
-    "url": "https://sushi.com"
+    "exchange_rank": "9",
+    "exchange_name": "Bitget",
+    "exchange_trustscore": "10/10",
+    "id": "cex-9-bitget",
+    "type": "CEX"
   },
   {
-    "id": "curve",
-    "name": "Curve Finance",
-    "logo": "https://cryptologos.cc/logos/curve-dao-token-crv-logo.png",
-    "type": "DEX",
-    "makerFee": "0%",
-    "takerFee": "0.04%",
-    "swapFee": "0.04%",
-    "features": [
-      "Stablecoin focus",
-      "Low slippage",
-      "Gauge voting"
-    ],
-    "url": "https://curve.fi"
+    "exchange_rank": "10",
+    "exchange_name": "HTX",
+    "exchange_trustscore": "10/10",
+    "id": "cex-10-htx",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "11",
+    "exchange_name": "Crypto.com Exchange",
+    "exchange_trustscore": "9/10",
+    "id": "cex-11-crypto-com-exchange",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "12",
+    "exchange_name": "MEXC",
+    "exchange_trustscore": "9/10",
+    "id": "cex-12-mexc",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "13",
+    "exchange_name": "Bitstamp",
+    "exchange_trustscore": "9/10",
+    "id": "cex-13-bitstamp",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "14",
+    "exchange_name": "Bithumb",
+    "exchange_trustscore": "9/10",
+    "id": "cex-14-bithumb",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "15",
+    "exchange_name": "Gemini",
+    "exchange_trustscore": "9/10",
+    "id": "cex-15-gemini",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "16",
+    "exchange_name": "LBank",
+    "exchange_trustscore": "9/10",
+    "id": "cex-16-lbank",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "17",
+    "exchange_name": "Phemex",
+    "exchange_trustscore": "9/10",
+    "id": "cex-17-phemex",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "18",
+    "exchange_name": "Coincheck",
+    "exchange_trustscore": "9/10",
+    "id": "cex-18-coincheck",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "19",
+    "exchange_name": "WhiteBIT",
+    "exchange_trustscore": "9/10",
+    "id": "cex-19-whitebit",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "20",
+    "exchange_name": "BingX",
+    "exchange_trustscore": "9/10",
+    "id": "cex-20-bingx",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "21",
+    "exchange_name": "Bitfinex",
+    "exchange_trustscore": "8/10",
+    "id": "cex-21-bitfinex",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "22",
+    "exchange_name": "Bitrue",
+    "exchange_trustscore": "8/10",
+    "id": "cex-22-bitrue",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "23",
+    "exchange_name": "Coinone",
+    "exchange_trustscore": "8/10",
+    "id": "cex-23-coinone",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "24",
+    "exchange_name": "Korbit",
+    "exchange_trustscore": "8/10",
+    "id": "cex-24-korbit",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "25",
+    "exchange_name": "WazirX",
+    "exchange_trustscore": "8/10",
+    "id": "cex-25-wazirx",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "26",
+    "exchange_name": "Poloniex",
+    "exchange_trustscore": "8/10",
+    "id": "cex-26-poloniex",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "27",
+    "exchange_name": "Bitbank",
+    "exchange_trustscore": "8/10",
+    "id": "cex-27-bitbank",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "28",
+    "exchange_name": "bitFlyer",
+    "exchange_trustscore": "8/10",
+    "id": "cex-28-bitflyer",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "29",
+    "exchange_name": "CoinEx",
+    "exchange_trustscore": "8/10",
+    "id": "cex-29-coinex",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "30",
+    "exchange_name": "Indodax",
+    "exchange_trustscore": "8/10",
+    "id": "cex-30-indodax",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "31",
+    "exchange_name": "Zaif",
+    "exchange_trustscore": "7/10",
+    "id": "cex-31-zaif",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "32",
+    "exchange_name": "Bitso",
+    "exchange_trustscore": "7/10",
+    "id": "cex-32-bitso",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "33",
+    "exchange_name": "Mercado Bitcoin",
+    "exchange_trustscore": "7/10",
+    "id": "cex-33-mercado-bitcoin",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "34",
+    "exchange_name": "Coins.ph",
+    "exchange_trustscore": "7/10",
+    "id": "cex-34-coins-ph",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "35",
+    "exchange_name": "GMO Coin",
+    "exchange_trustscore": "7/10",
+    "id": "cex-35-gmo-coin",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "36",
+    "exchange_name": "Liquid",
+    "exchange_trustscore": "7/10",
+    "id": "cex-36-liquid",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "37",
+    "exchange_name": "BTCBox",
+    "exchange_trustscore": "7/10",
+    "id": "cex-37-btcbox",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "38",
+    "exchange_name": "BTC Markets",
+    "exchange_trustscore": "7/10",
+    "id": "cex-38-btc-markets",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "39",
+    "exchange_name": "Independent Reserve",
+    "exchange_trustscore": "7/10",
+    "id": "cex-39-independent-reserve",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "40",
+    "exchange_name": "CoinJar",
+    "exchange_trustscore": "7/10",
+    "id": "cex-40-coinjar",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "41",
+    "exchange_name": "Bitvavo",
+    "exchange_trustscore": "7/10",
+    "id": "cex-41-bitvavo",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "42",
+    "exchange_name": "FMFW.io",
+    "exchange_trustscore": "6/10",
+    "id": "cex-42-fmfw-io",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "43",
+    "exchange_name": "EXMO",
+    "exchange_trustscore": "6/10",
+    "id": "cex-43-exmo",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "44",
+    "exchange_name": "CEX.IO",
+    "exchange_trustscore": "6/10",
+    "id": "cex-44-cex-io",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "45",
+    "exchange_name": "NiceHash",
+    "exchange_trustscore": "6/10",
+    "id": "cex-45-nicehash",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "46",
+    "exchange_name": "Coinlist Pro",
+    "exchange_trustscore": "6/10",
+    "id": "cex-46-coinlist-pro",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "47",
+    "exchange_name": "Paribu",
+    "exchange_trustscore": "6/10",
+    "id": "cex-47-paribu",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "48",
+    "exchange_name": "BtcTurk | Pro",
+    "exchange_trustscore": "6/10",
+    "id": "cex-48-btcturk---pro",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "49",
+    "exchange_name": "Tidex",
+    "exchange_trustscore": "6/10",
+    "id": "cex-49-tidex",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "50",
+    "exchange_name": "ProBit Global",
+    "exchange_trustscore": "6/10",
+    "id": "cex-50-probit-global",
+    "type": "CEX"
+  },
+  {
+    "exchange_rank": "1",
+    "exchange_name": "Uniswap V3 (Ethereum)",
+    "exchange_trustscore": "10",
+    "exchange_marketshare": "18.4%",
+    "id": "dex-1-uniswap-v3--ethereum-",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "2",
+    "exchange_name": "Raydium",
+    "exchange_trustscore": "10",
+    "exchange_marketshare": "14.2%",
+    "id": "dex-2-raydium",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "3",
+    "exchange_name": "PancakeSwap V3 (BSC)",
+    "exchange_trustscore": "10",
+    "exchange_marketshare": "9.1%",
+    "id": "dex-3-pancakeswap-v3--bsc-",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "4",
+    "exchange_name": "Jupiter",
+    "exchange_trustscore": "10",
+    "exchange_marketshare": "7.5%",
+    "id": "dex-4-jupiter",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "5",
+    "exchange_name": "Uniswap V3 (Arbitrum)",
+    "exchange_trustscore": "10",
+    "exchange_marketshare": "5.2%",
+    "id": "dex-5-uniswap-v3--arbitrum-",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "6",
+    "exchange_name": "Orca",
+    "exchange_trustscore": "10",
+    "exchange_marketshare": "4.8%",
+    "id": "dex-6-orca",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "7",
+    "exchange_name": "Curve (Ethereum)",
+    "exchange_trustscore": "10",
+    "exchange_marketshare": "4.1%",
+    "id": "dex-7-curve--ethereum-",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "8",
+    "exchange_name": "Aerodrome Finance",
+    "exchange_trustscore": "9",
+    "exchange_marketshare": "3.9%",
+    "id": "dex-8-aerodrome-finance",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "9",
+    "exchange_name": "Uniswap V3 (Base)",
+    "exchange_trustscore": "10",
+    "exchange_marketshare": "3.5%",
+    "id": "dex-9-uniswap-v3--base-",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "10",
+    "exchange_name": "PancakeSwap V3 (Ethereum)",
+    "exchange_trustscore": "10",
+    "exchange_marketshare": "2.8%",
+    "id": "dex-10-pancakeswap-v3--ethereum-",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "11",
+    "exchange_name": "Uniswap V2 (Ethereum)",
+    "exchange_trustscore": "10",
+    "exchange_marketshare": "2.1%",
+    "id": "dex-11-uniswap-v2--ethereum-",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "12",
+    "exchange_name": "Balancer V2",
+    "exchange_trustscore": "10",
+    "exchange_marketshare": "1.9%",
+    "id": "dex-12-balancer-v2",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "13",
+    "exchange_name": "Trader Joe (Avalanche)",
+    "exchange_trustscore": "9",
+    "exchange_marketshare": "1.7%",
+    "id": "dex-13-trader-joe--avalanche-",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "14",
+    "exchange_name": "Uniswap V3 (Polygon)",
+    "exchange_trustscore": "10",
+    "exchange_marketshare": "1.5%",
+    "id": "dex-14-uniswap-v3--polygon-",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "15",
+    "exchange_name": "Meteora",
+    "exchange_trustscore": "8",
+    "exchange_marketshare": "1.4%",
+    "id": "dex-15-meteora",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "16",
+    "exchange_name": "Quickswap V3",
+    "exchange_trustscore": "9",
+    "exchange_marketshare": "1.2%",
+    "id": "dex-16-quickswap-v3",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "17",
+    "exchange_name": "Sushiswap V3 (Ethereum)",
+    "exchange_trustscore": "9",
+    "exchange_marketshare": "1.1%",
+    "id": "dex-17-sushiswap-v3--ethereum-",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "18",
+    "exchange_name": "Camelot V3",
+    "exchange_trustscore": "9",
+    "exchange_marketshare": "0.9%",
+    "id": "dex-18-camelot-v3",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "19",
+    "exchange_name": "Maverick Protocol",
+    "exchange_trustscore": "8",
+    "exchange_marketshare": "0.8%",
+    "id": "dex-19-maverick-protocol",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "20",
+    "exchange_name": "PancakeSwap V2 (BSC)",
+    "exchange_trustscore": "10",
+    "exchange_marketshare": "0.8%",
+    "id": "dex-20-pancakeswap-v2--bsc-",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "21",
+    "exchange_name": "Velodrome Finance V2",
+    "exchange_trustscore": "8",
+    "exchange_marketshare": "0.7%",
+    "id": "dex-21-velodrome-finance-v2",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "22",
+    "exchange_name": "DODO (Ethereum)",
+    "exchange_trustscore": "8",
+    "exchange_marketshare": "0.7%",
+    "id": "dex-22-dodo--ethereum-",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "23",
+    "exchange_name": "Fraxswap",
+    "exchange_trustscore": "9",
+    "exchange_marketshare": "0.6%",
+    "id": "dex-23-fraxswap",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "24",
+    "exchange_name": "Hashflow",
+    "exchange_trustscore": "8",
+    "exchange_marketshare": "0.6%",
+    "id": "dex-24-hashflow",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "25",
+    "exchange_name": "Osmosis",
+    "exchange_trustscore": "9",
+    "exchange_marketshare": "0.5%",
+    "id": "dex-25-osmosis",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "26",
+    "exchange_name": "KyberSwap Elastic (Polygon)",
+    "exchange_trustscore": "8",
+    "exchange_marketshare": "0.5%",
+    "id": "dex-26-kyberswap-elastic--polygon-",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "27",
+    "exchange_name": "WOOFi (Arbitrum)",
+    "exchange_trustscore": "8",
+    "exchange_marketshare": "0.4%",
+    "id": "dex-27-woofi--arbitrum-",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "28",
+    "exchange_name": "SunSwap V2",
+    "exchange_trustscore": "7",
+    "exchange_marketshare": "0.4%",
+    "id": "dex-28-sunswap-v2",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "29",
+    "exchange_name": "SyncSwap",
+    "exchange_trustscore": "7",
+    "exchange_marketshare": "0.4%",
+    "id": "dex-29-syncswap",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "30",
+    "exchange_name": "Thena V2",
+    "exchange_trustscore": "7",
+    "exchange_marketshare": "0.3%",
+    "id": "dex-30-thena-v2",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "31",
+    "exchange_name": "Uniswap V3 (Optimism)",
+    "exchange_trustscore": "10",
+    "exchange_marketshare": "0.3%",
+    "id": "dex-31-uniswap-v3--optimism-",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "32",
+    "exchange_name": "VVS Finance",
+    "exchange_trustscore": "7",
+    "exchange_marketshare": "0.3%",
+    "id": "dex-32-vvs-finance",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "33",
+    "exchange_name": "Thorchain",
+    "exchange_trustscore": "8",
+    "exchange_marketshare": "0.3%",
+    "id": "dex-33-thorchain",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "34",
+    "exchange_name": "Biswap",
+    "exchange_trustscore": "7",
+    "exchange_marketshare": "0.2%",
+    "id": "dex-34-biswap",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "35",
+    "exchange_name": "PancakeSwap V3 (Arbitrum)",
+    "exchange_trustscore": "10",
+    "exchange_marketshare": "0.2%",
+    "id": "dex-35-pancakeswap-v3--arbitrum-",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "36",
+    "exchange_name": "SpookySwap",
+    "exchange_trustscore": "7",
+    "exchange_marketshare": "0.2%",
+    "id": "dex-36-spookyswap",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "37",
+    "exchange_name": "ApeSwap",
+    "exchange_trustscore": "6",
+    "exchange_marketshare": "0.2%",
+    "id": "dex-37-apeswap",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "38",
+    "exchange_name": "Honeyswap",
+    "exchange_trustscore": "6",
+    "exchange_marketshare": "0.1%",
+    "id": "dex-38-honeyswap",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "39",
+    "exchange_name": "Sushiswap (Arbitrum)",
+    "exchange_trustscore": "9",
+    "exchange_marketshare": "0.1%",
+    "id": "dex-39-sushiswap--arbitrum-",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "40",
+    "exchange_name": "Loopring",
+    "exchange_trustscore": "8",
+    "exchange_marketshare": "0.1%",
+    "id": "dex-40-loopring",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "41",
+    "exchange_name": "StellaSwap",
+    "exchange_trustscore": "6",
+    "exchange_marketshare": "0.1%",
+    "id": "dex-41-stellaswap",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "42",
+    "exchange_name": "Pangolin",
+    "exchange_trustscore": "7",
+    "exchange_marketshare": "0.1%",
+    "id": "dex-42-pangolin",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "43",
+    "exchange_name": "Netswap",
+    "exchange_trustscore": "5",
+    "exchange_marketshare": "0.1%",
+    "id": "dex-43-netswap",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "44",
+    "exchange_name": "Astroport",
+    "exchange_trustscore": "7",
+    "exchange_marketshare": "0.1%",
+    "id": "dex-44-astroport",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "45",
+    "exchange_name": "Kujira Fin",
+    "exchange_trustscore": "7",
+    "exchange_marketshare": "0.1%",
+    "id": "dex-45-kujira-fin",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "46",
+    "exchange_name": "Helix",
+    "exchange_trustscore": "7",
+    "exchange_marketshare": "0.1%",
+    "id": "dex-46-helix",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "47",
+    "exchange_name": "Wynd",
+    "exchange_trustscore": "5",
+    "exchange_marketshare": "<0.1%",
+    "id": "dex-47-wynd",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "48",
+    "exchange_name": "White Whale",
+    "exchange_trustscore": "5",
+    "exchange_marketshare": "<0.1%",
+    "id": "dex-48-white-whale",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "49",
+    "exchange_name": "Solarbeam",
+    "exchange_trustscore": "6",
+    "exchange_marketshare": "<0.1%",
+    "id": "dex-49-solarbeam",
+    "type": "DEX"
+  },
+  {
+    "exchange_rank": "50",
+    "exchange_name": "SpiritSwap",
+    "exchange_trustscore": "6",
+    "exchange_marketshare": "<0.1%",
+    "id": "dex-50-spiritswap",
+    "type": "DEX"
   }
 ]

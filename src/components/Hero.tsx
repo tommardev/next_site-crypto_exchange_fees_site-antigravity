@@ -45,8 +45,8 @@ export const Hero = ({ title }: { title: string }) => {
             </Text>
           </Heading>
           <Text color={'gray.500'}>
-            Knowledge is profit. Discover the lowest trading fees across the cryptosphere.
-            Compare CEX and DEX platforms in real-time and save on every transaction.
+            Knowledge is power. Discover the top-ranked Centralized and Decentralized
+            exchanges globally, verified and curated using advanced AI models via Google AI Studio.
           </Text>
           <Stack
             spacing={{ base: 4, sm: 6 }}
@@ -61,7 +61,7 @@ export const Hero = ({ title }: { title: string }) => {
               colorScheme={'blue'}
               bg={'blue.400'}
               _hover={{ bg: 'blue.500' }}>
-              Compare CEXs
+              View Top CEXs
             </Button>
             <Button
               as={NextLink}

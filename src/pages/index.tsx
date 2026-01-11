@@ -5,7 +5,6 @@ import {
   Text,
   Button,
   Stack,
-  Icon,
   useColorModeValue,
   SimpleGrid,
   Flex,
@@ -39,29 +38,28 @@ export default function Home() {
 
   return (
     <>
-      <Hero title="Optimize Your Trading Fees" />
+      <Hero title="Top Ranked Crypto Exchanges" />
 
       <Container maxW={'7xl'} py={16}>
         <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'} mb={16}>
           <Heading fontSize={'4xl'} fontWeight={'bold'}>
-            The Hub for Crypto Exchange Fees
+            AI-Powered Exchange Rankings
           </Heading>
           <Text color={'gray.500'} fontSize={'lg'}>
-            Comparing fees across multiple platforms can be a headache. We've
-            aggregated the most important data so you can trade with confidence
-            and keep more of your profits.
+            We use Google Gemini AI to analyze and rank the top cryptocurrency
+            exchanges globally. Discover the most trusted platforms for your trading needs.
           </Text>
         </Stack>
 
         <Stack spacing={20}>
           {/* CEX Preview */}
           <Box>
-            <Flex justify="space-between" align="center" mb={8}>
-              <Box>
-                <Heading size="lg" mb={2}>Centralized Exchanges (CEXs)</Heading>
-                <Text color="gray.600">Secure, liquid, and industry-standard platforms.</Text>
+            <Flex justify="space-between" align="center" mb={8} direction={{ base: 'column', md: 'row' }}>
+              <Box mb={{ base: 4, md: 0 }}>
+                <Heading size="lg" mb={2}>Centralized Favorites (CEXs)</Heading>
+                <Text color="gray.600">Top-tier exchanges with high liquidity and trust.</Text>
               </Box>
-              <Button as={NextLink} href="/cex" colorScheme="blue" variant="outline">View All CEXs</Button>
+              <Button as={NextLink} href="/cex" colorScheme="blue" variant="outline">View Top 50 CEXs</Button>
             </Flex>
             <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
               {loading
@@ -72,12 +70,12 @@ export default function Home() {
 
           {/* DEX Preview */}
           <Box>
-            <Flex justify="space-between" align="center" mb={8}>
-              <Box>
-                <Heading size="lg" mb={2}>Decentralized Exchanges (DEXs)</Heading>
-                <Text color="gray.600">Permissionless swapping and yield opportunities.</Text>
+            <Flex justify="space-between" align="center" mb={8} direction={{ base: 'column', md: 'row' }}>
+              <Box mb={{ base: 4, md: 0 }}>
+                <Heading size="lg" mb={2}>Leading DEXs</Heading>
+                <Text color="gray.600">The best decentralized platforms for permissionless trading.</Text>
               </Box>
-              <Button as={NextLink} href="/dex" colorScheme="purple" variant="outline">View All DEXs</Button>
+              <Button as={NextLink} href="/dex" colorScheme="purple" variant="outline">View Top 50 DEXs</Button>
             </Flex>
             <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
               {loading
@@ -100,15 +98,14 @@ export default function Home() {
               fontWeight={600}
               fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
               lineHeight={'110%'}>
-              Stay ahead of the <br />
+              Never miss a <br />
               <Text as={'span'} color={'blue.400'}>
-                market fees
+                ranking update
               </Text>
             </Heading>
             <Text color={'gray.500'}>
-              Our data is updated regularly to ensure you have the most accurate
-              information. Join our newsletter to get weekly summaries of fee
-              changes and new exchange listings.
+              Our lists are updated nightly using the latest market data and
+              AI analysis. Stay informed about the shifting crypto landscape.
             </Text>
             <Stack
               direction={'column'}
@@ -124,10 +121,10 @@ export default function Home() {
                 _hover={{
                   bg: 'blue.500',
                 }}>
-                Get Started
+                Join Newsletter
               </Button>
-              <Button variant={'link'} colorScheme={'blue'} size={'sm'}>
-                Learn more
+              <Button as={NextLink} href="/about" variant={'link'} colorScheme={'blue'} size={'sm'}>
+                How our AI rankings work
               </Button>
             </Stack>
           </Stack>
